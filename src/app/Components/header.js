@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import logo from '../Images/icon.png';
+import logo from '/Images/icon.png';
 
 const headerStyle = {
   minHeight: '7vh',

@@ -14,12 +14,12 @@ const firstPrev = {
 }
 
 const secPrev = {
-  backgroundImage: "url('/Images/Hive Soaps Packaging.png')",
+  backgroundImage: "url('/Images/HiveSoapsPackaging.png')",
   backgroundPosition: "center"
 }
 
 const thirdPrev = {
-  backgroundImage: "url('/Images/SMM Website Mockup.png')",
+  backgroundImage: "url('/Images/SMMWebsiteMockup.png')",
   backgroundPosition: "right"
 }
 
