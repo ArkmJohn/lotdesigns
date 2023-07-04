@@ -17,7 +17,6 @@ import SMPreview from '../Images/SMPreview.png';
 import arrowStroke from "../Images/HomeArrowStroke.svg";
 import Image from 'next/image';
 
-
 var portfolioItem = [
   {
     title: "Quiq Stores",
