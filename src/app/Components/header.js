@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import logo from '/Images/icon.png';
 
 const headerStyle = {
   minHeight: '7vh',
@@ -14,7 +13,7 @@ export default function Header() {
       <nav  style={headerStyle} className="min-w-full flex justify-between border-gray-200 border-solid border-b-2">
         <div className='relative flex jusify-between h-20 w-40 border-gray-200 border-solid border-r-2'>
           <Image
-            src={logo}
+            src="url('/Images/icon.png')"
             alt="Lot Designs"
             className='object-contain py-2'
             fill
