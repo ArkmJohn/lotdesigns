@@ -1,31 +1,51 @@
 import CallToAction from "./call-to-action";
 import KnowUsMore from "./know-us-more";
 import PortfolioSlides from "./portfolio-slides";
-
-const top = {
-    height:'80%'
-  };
-const bottom = {
-    height: '80%'
-};
-
-const left = {
-    width: '45%'
+import Image from "next/image";
+const heroStyle = {
+  paddingTop: '7vh',
+  minHeight: '93vh',
+  overflow: 'hidden',
 }
 
-const right = {
-    width: '55%'
+const firstPrev = {
+  backgroundImage: "url('/Images/Quiq.png')",
+  backgroundPosition: "center"
+}
+
+const secPrev = {
+  backgroundImage: "url('/Images/Hive Soaps Packaging.png')",
+  backgroundPosition: "center"
+}
+
+const thirdPrev = {
+  backgroundImage: "url('/Images/SMM Website Mockup.png')",
+  backgroundPosition: "right"
+}
+
+const mainBanner = {
+  minHeight: '65.8vh',
+}
+
+const cta = {
+  minHeight: '28.2vh',
 }
 
 export default function Hero() {
     return (
-      <section className="min-h-94vh flex">
-        <div style={left} className="row">
-            <div style={top}><KnowUsMore/></div> 
-            <div style={bottom}><CallToAction/></div>
+      <section style={heroStyle} className="flex flex-wrap">
+        <div className="lg:basis-2/5 basis-full sm:basis-full overflow-hidden row">
+            <div style={mainBanner} className="justify-between content-center grid grid-cols-1"><KnowUsMore/></div> 
+            <div style={cta}><CallToAction/></div>
         </div>
-        <div style={right} className="">
+        {/* <div className="lg:basis-3/5 basis-full sm:basis-full overflow-hidden">
             <div><PortfolioSlides/></div>
+        </div> */}
+        <div className="lg:basis-1/5 basis-full sm:basis-full" style={firstPrev}>
+        </div>
+        <div className="lg:basis-1/5 basis-full sm:basis-full" style={secPrev}>
+        </div>
+        <div className="lg:basis-1/5 basis-full sm:basis-full" style={thirdPrev}>
         </div>
       </section>
     )
